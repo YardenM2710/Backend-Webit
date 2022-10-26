@@ -1,7 +1,9 @@
 {
   "name": "server",
   "nodemonConfig": {
-    "ignore": ["logs/*"],
+    "ignore": [
+      "logs/*"
+    ],
     "delay": 2500
   },
   "version": "1.0.0",
@@ -9,7 +11,7 @@
   "main": "server.js",
   "scripts": {
     "start1": "set NODE_ENV=development&&nodemon server.js",
-    "start": "set NODE_ENV=development&&node server.js",
+    "start": "node server.js",
     "server:dev": "set NODE_ENV=development&&nodemon server.js",
     "server:prod": "set NODE_ENV=production&&node server.js"
   },
